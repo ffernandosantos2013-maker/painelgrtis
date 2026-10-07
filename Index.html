@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscreva-se para continuar</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 17px;
+    }
+
+    .botao {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      border-radius: 8px;
+      background: #1877f2;
+      color: white;
+      text-decoration: none;
+      border: none;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    #continuar {
+      display: none;
+    }
+
+    #painel {
+      display: none;
+    }
+
+    .discord {
+      background: #5865F2;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div id="inicio">
+    <h1>🔔 Inscreva-se no canal</h1>
+
+    <p>Inscreva-se no canal para continuar.</p>
+
+    <a
+      class="botao"
+      href="https://youtube.com/@darkpulse-777k"
+      target="_blank">
+      Inscrever no canal
+    </a>
+
+    <br>
+
+    <button
+      id="continuar"
+      class="botao"
+      onclick="mostrarPainel()">
+      Continuar
+    </button>
+  </div>
+
+  <div id="painel">
+    <h1>🎁 Painel Grátis</h1>
+
+    <p>Acesse nosso painel grátis pelo Discord.</p>
+
+    <a
+      class="botao discord"
+      href="https://discord.gg/ZnUSngfpa"
+      target="_blank">
+      💬 Entrar no Discord
+    </a>
+  </div>
+
+</div>
+
+<script>
+  setTimeout(function() {
+    document.getElementById("continuar").style.display = "inline-block";
+  }, 14000);
+
+  function mostrarPainel() {
+    document.getElementById("inicio").style.display = "none";
+    document.getElementById("painel").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
